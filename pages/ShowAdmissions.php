@@ -11,7 +11,6 @@
 <title>Title</title>
 </head>
 <body>
-    <iframe
 <table class="table">
     <thead>
         <tr>
@@ -55,12 +54,14 @@ if($result){
             <td><?php echo $row["state"] ?></td>
             <td><?php echo $row["dob"] ?></td>
             <td><?php echo $row["lyp"] ?></td>
+            <?php if($row["isadmin"]==1) { ?>
             <td><?php echo $row["pass"] ?></td>
             <td><?php echo $row["isapprove"] ?></td>
             <td><?php echo $row["isadmin"] ?></td>
             <td><button type="button" class="btn btn-info">Edit</button></td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
-            <td><button type="button" class="btn btn-success">Delete</button></td>
+            <td><button type="button" class="btn btn-success">Approve</button></td>
+            <?php } ?>
         </tr>
 
 <?php

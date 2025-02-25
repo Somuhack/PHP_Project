@@ -13,6 +13,7 @@
       $password=$_POST['password'];
       $cpassword=$_POST['cpassword'];
       if($password==$cpassword){
+         // $hash_pass=password_hash($password,PASSWORD_DEFAULT);
         try {
             $sql = "INSERT INTO users (`name`, `email`, `address`, `pin`, `Phone`, `gender`, `state`, `dob`, `lyp`, `pass`, `isapprove`, `isadmin`) 
                   VALUES ('$name', '$email', '$address', '$pin', '$phone', '$gender', '$state', '$date', '$lyp', '$password', 0, 0)";
