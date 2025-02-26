@@ -1,6 +1,6 @@
 <figure class="text-center">
   <blockquote class="blockquote">
-    <p class="h1 text-primary">BrainWare University Admission Form </p>
+    <p class="h1 text-primary">BrainWare University Admission Form !</p>
   </blockquote>
 </figure>
 <form class="w-50 mb-5 card p-4 bg-success p-2 text-dark bg-opacity-25" method="POST" action="./pages/AdmissionController.php" style="margin: 0 auto;">
